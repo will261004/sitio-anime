@@ -150,3 +150,47 @@ footer {
     font-size: 0.9rem;
     margin-top: 40px;
 }
+/* Contenedor de la imagen para recortarla de forma limpia */
+.card-image-container {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Ajuste de la imagen para que llene el espacio sin deformarse */
+.card-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover: la imagen hace un zoom suave si pasas el mouse por encima */
+.card:hover .card-image-container img {
+    transform: scale(1.05);
+}
+
+/* Margen interno para separar el contenido del texto de la imagen */
+.card-content {
+    padding: 20px;
+}
+
+/* Estilo estético para el nuevo resumen */
+.resumen {
+    font-size: 0.9rem;
+    color: #b3b3b3;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    
+    /* Mantiene las tarjetas alineadas limitando el texto a 3 líneas */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+/* Clase CSS para ocultar elementos temporalmente */
+.hidden {
+    display: none !important;
+}

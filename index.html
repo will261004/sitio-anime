@@ -21,44 +21,77 @@
         <div class="logo">🌸 AnimeStation</div>
         <nav>
             <ul>
-                <li><a href="#" class="active">Inicio</a></li>
-                <li><a href="#">Populares</a></li>
+                <li><a href="#" id="btn-inicio" class="active">Inicio</a></li>
+                <li><a href="#" id="btn-populares">Populares</a></li>
                 <li><a href="#">Mi Lista</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <h2>Bienvenidos a mi Rincón Anime</h2>
-            <p>Un espacio sencillo y rápido para trackear mis series favoritas y probar herramientas web.</p>
+       <section class="grid-anime">
+            <div class="card">
+                <div class="card-image-container">
+                    <img src="https://imgs.search.brave.com/Cack0zxUF30MPzL-Ync6Y1ntPaETrWGJDrd1uMe4vuk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL1Mv/cHYtdGFyZ2V0LWlt/YWdlcy8yZjIxNTkw/ZWMxZmZlYmU4Yjk3/Yjk3NmE0MzBmZjcz/YzQzNzdmODU0MGNl/MTc5YzkxOWQzMDEw/ODQwY2FkMGMxLmpw/Zw">
+                </div>
+                <div class="card-content">
+                    <div class="badge">Shonen</div>
+                    <h3>Naruto Shippuden</h3>
+                    <p class="resumen">Naruto Uzumaki regresa a la Aldea de la Hoja tras años de arduo entrenamiento con Jiraiya, listo para enfrentar a la peligrosa organización Akatsuki y rescatar a su amigo Sasuke de la oscuridad.</p>
+                    <button class="btn-ver">Ver más</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image-container">
+                    <img src="https://imgs.search.brave.com/E1Zgz7yWGiD2GlvDP4_6QBwBxgzIzkk89Jym3Xn7A-w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvYXR0/YWNrLW9uLXRpdGFu/LTRrLXBvcnRyYWl0/LW9mLWxldmkteXN6/eGJpdnl4Zzh2eTBr/ay5qcGc">
+                </div>
+                <div class="card-content">
+                    <div class="badge text-purple">Seinen</div>
+                    <h3>Shingeki no Kyojin</h3>
+                    <p class="resumen">La humanidad vive atrapada dentro de gigantescas murallas para protegerse de titanes devoradores de hombres. Todo cambia drásticamente cuando el Titán Colosal destruye la paz y Eren Jaeger jura venganza.</p>
+                    <button class="btn-ver">Ver más</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image-container">
+                    <img src="https://imgs.search.brave.com/qTa-05An4mVs-XrVqgt1J1kKMkfx7ZggglCgy4DUGq4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hcmVh/anVnb25lcy5zcG9y/dC5lcy93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMS8wNy9mdWxs/bWV0YWwtYWxjaGVt/aXN0LWJyb3RoZXJo/b29kLTQzNHg1ODgu/anBnLndlYnA">
+                </div>
+                <div class="card-content">
+                    <div class="badge text-pink">Aventura</div>
+                    <h3>Full Metal Alquimist</h3>
+                    <p class="resumen">Eduard y Alnfose los hermanos Elric buscan como recuperar sus cuerpos luego de su fallido intento de revivir a su madre</p>
+                    <button class="btn-ver">Ver más</button>
+                </div>
+            </div>
+        </section>
+        <section id="seccion-populares" class="grid-anime hidden">
+            <div class="card">
+                <div class="card-image-container">
+                    <img src="https://imgs.search.brave.com/BQnP8CkAGhRyX925NmdG2_Ef6UOnm6Bi-y6imvrsH0U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/YW5tb3N1Z29pLmNv/bS9maWxlL21lZGlh/LXN1Z29pLzIwMjIv/MDkvSnVqdXRzdS1L/YWlzZW4tYW5pbWUt/dmlzdWFsLmpwZw">
+                </div>
+                <div class="card-content">
+                    <div class="badge">Shonen</div>
+                    <h3>Jujutsu Kaisen</h3>
+                    <p class="resumen">Yuji Itadori, un estudiante de secundaria con una fuerza física sobrehumana, se traga un dedo maldito para salvar a sus amigos, convirtiéndose en el recipiente del Rey de las Maldiciones.</p>
+                    <button class="btn-ver">Ver más</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image-container">
+                    <img src="https://imgs.search.brave.com/Ea5179098mlEKYGnqdpJEs5jnni73nTMTies_kYYXKY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/NXB1a3U1Y2N1YWc1/MS5qcGc_d2lkdGg9/NjQwJmNyb3A9c21h/cnQmYXV0bz13ZWJw/JnM9Y2Q5ZTFhOGQ3/NTM5YTM1NDVjNTM1/OWY0MmNhOWM5ZGY0/MGE3NWM2OQ" alt="Demon Slayer">
+                </div>
+                <div class="card-content">
+                    <div class="badge">Acción</div>
+                    <h3>Demon Slayer</h3>
+                    <p class="resumen">Tanjiro Kamado emprende un viaje peligroso para convertirse en cazador de demonios, vengar a su familia masacrada y encontrar una cura para volver humana a su hermana Nezuko.</p>
+                    <button class="btn-ver">Ver más</button>
+                </div>
+            </div>
         </section>
 
-        <section class="grid-anime">
-            <!-- Tarjeta 1 -->
-            <div class="card">
-                <div class="badge">Shonen</div>
-                <h3>Naruto Shippuden</h3>
-                <p>Un joven ninja que busca el reconocimiento de su aldea y sueña con convertirse en Hokage.</p>
-                <button class="btn-ver">Ver más</button>
-            </div>
-
-            <!-- Tarjeta 2 -->
-            <div class="card">
-                <div class="badge text-purple">Seinen</div>
-                <h3>Shingeki no Kyojin</h3>
-                <p>La humanidad lucha por sobrevivir contra gigantescas criaturas conocidas como Titanes.</p>
-                <button class="btn-ver">Ver más</button>
-            </div>
-
-            <!-- Tarjeta 3 -->
-            <div class="card">
-                <div class="badge text-pink">Romance</div>
-                <h3>Kimi no Na wa</h3>
-                <p>Dos desconocidos desarrollan un vínculo de otro mundo al descubrir que se intercambian cuerpos.</p>
-                <button class="btn-ver">Ver más</button>
-            </div>
-        </section>
     </main>
 
     <footer>
